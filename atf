@@ -1,4 +1,4 @@
-
+wait(14)
 local ScreenGui = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
 
