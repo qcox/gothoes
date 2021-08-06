@@ -96,7 +96,7 @@ coroutine.wrap(LKQP_fake_script)()
 local function RKJYVG_fake_script() -- Frame.serverhop 
 	local script = Instance.new('LocalScript', Frame)
 
-	wait(60)
+	wait(80)
 	while true do
 		wait()
 		local HttpService, TPService = game:GetService("HttpService"), game:GetService("TeleportService")
