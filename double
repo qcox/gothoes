@@ -1,0 +1,6 @@
+ModIDS = {
+    [1200472111] = true, -- iffunizz
+    [1213402439] = true, -- losercouncil
+}
+
+return ModIDS
