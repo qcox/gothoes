@@ -1,8 +1,8 @@
 ModIDS = {
     [1200472111] = true, -- iffunizz
     [2629940266] = true, -- okoito
-    [1213402439] = true, -- okoito
-
+    [1213402439] = true -- 
+    [284398752] = true -- 
 }
 
 return ModIDS
