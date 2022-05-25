@@ -5,11 +5,6 @@
 						end
 					end
 				end
-				getgenv().rejoin = game:GetService("CoreGui").RobloxPromptGui.promptOverlay.ChildAdded:Connect(function(child)
-					if child.Name == 'ErrorPrompt' and child:FindFirstChild('MessageArea') and child.MessageArea:FindFirstChild("ErrorFrame") then
-game:GetService("TeleportService"):TeleportToPlaceInstance(game.PlaceId, game.JobId, game:GetService("Players").LocalPlayer)
-					end
-				end)
 				local thes2 = tostring(findPlayer(getgenv().skid))
 				local target = game.Players:FindFirstChild(thes2)
 				if target then
