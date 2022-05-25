@@ -1,9 +1,4 @@
 setfpscap(10)
-repeat game:GetService("RunService").RenderStepped:Wait()
-until game.Players.LocalPlayer.Character:WaitForChild('Humanoid').Health == 100
-if game.Players.LocalPlayer.Character.ForceField then
-    game.Players.LocalPlayer.Character.ForceField:Destroy()
-end
 local function findPlayer(name)
 					for _, Player in ipairs(game.Players:GetPlayers()) do
 						if (string.lower(name) == string.sub(string.lower(Player.Name), 1, #name)) then
