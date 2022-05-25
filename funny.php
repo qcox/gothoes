@@ -4,6 +4,7 @@ local prompt = assert(game:GetService("CoreGui"):FindFirstChild("promptOverlay",
 assert(not prompt:FindFirstChild("ErrorPrompt"), prompt:FindFirstChild("ErrorPrompt") and wait(2) and game:GetService("TeleportService"):Teleport(game.PlaceId, game:GetService("Players").LocalPlayer))
 prompt.ChildAdded:Connect(function(child)
     	    syn.queue_on_teleport([[
+    	getgenv().skid = "ballas"
     	wait(1)
     	print("1")
 	    wait(9)
