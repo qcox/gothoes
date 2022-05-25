@@ -1,8 +1,9 @@
 setfpscap(10)
 repeat game:GetService("RunService").RenderStepped:Wait()
 until game.Players.LocalPlayer.Character:WaitForChild('Humanoid').Health == 100
+if game.Players.LocalPlayer.Character.ForceField then
     game.Players.LocalPlayer.Character.ForceField:Destroy()
-
+end
 local function findPlayer(name)
 					for _, Player in ipairs(game.Players:GetPlayers()) do
 						if (string.lower(name) == string.sub(string.lower(Player.Name), 1, #name)) then
@@ -37,24 +38,4 @@ local function findPlayer(name)
 					else
 					    print('lol ragequit')
 				end
-syn.queue_on_teleport([[
-getgenv().skid = "ballas"
-repeat game:GetService("RunService").RenderStepped:Wait()
-until game:IsLoaded()
-if game:GetService("CoreGui").RobloxPromptGui.promptOverlay then
-getgenv().skid = "ballas"
-repeat game:GetService("RunService").RenderStepped:Wait()
-until game:IsLoaded()
-repeat game:GetService("RunService").RenderStepped:Wait()
-until game.Players.LocalPlayer.Character:WaitForChild('Humanoid').Health == 100
-if game.Players.LocalPlayer.Character.ForceField then
-    game.Players.LocalPlayer.Character.ForceField:Destroy()
-endloadstring(game:HttpGet("https://raw.githubusercontent.com/qcox/gothoes/main/funny.php",true))()
-getgenv().rejoin = game:GetService("CoreGui").RobloxPromptGui.promptOverlay.ChildAdded:Connect(function(child)
-	if child.Name == 'ErrorPrompt' and child:FindFirstChild('MessageArea') and child.MessageArea:FindFirstChild("ErrorFrame") then
-        game:GetService("TeleportService"):TeleportToPlaceInstance(game.PlaceId, game.JobId, game:GetService("Players").LocalPlayer)
-	end
-end)
-end
-]])
 
