@@ -1,13 +1,15 @@
 setfpscap(10)
 wait(10)
-getgenv().rejoin = game:GetService("CoreGui").RobloxPromptGui.promptOverlay.ChildAdded:Connect(function(child)
-	if child.Name == 'ErrorPrompt' and child:FindFirstChild('MessageArea') and child.MessageArea:FindFirstChild("ErrorFrame") then
-	    syn.queue_on_teleport([[
-	    wait(10)
+local prompt = assert(game:GetService("CoreGui"):FindFirstChild("promptOverlay", true), "Lol it should work :/")
+assert(not prompt:FindFirstChild("ErrorPrompt"), prompt:FindFirstChild("ErrorPrompt") and wait(2) and game:GetService("TeleportService"):Teleport(game.PlaceId, game:GetService("Players").LocalPlayer))
+prompt.ChildAdded:Connect(function(child)
+    	    syn.queue_on_teleport([[
+    	wait(1)
+    	print("1")
+	    wait(9)
         loadstring(game:HttpGet("https://raw.githubusercontent.com/qcox/gothoes/main/funny.php",true))()
         ]])
         game:GetService("TeleportService"):TeleportToPlaceInstance(game.PlaceId, game.JobId, game:GetService("Players").LocalPlayer)
-	end
 end)
 local function findPlayer(name)
 					for _, Player in ipairs(game.Players:GetPlayers()) do
