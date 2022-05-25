@@ -1,4 +1,3 @@
-getgenv().skid = "ballas"
 				local function findPlayer(name)
 					for _, Player in ipairs(game.Players:GetPlayers()) do
 						if (string.lower(name) == string.sub(string.lower(Player.Name), 1, #name)) then
